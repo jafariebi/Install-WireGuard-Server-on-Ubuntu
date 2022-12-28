@@ -28,4 +28,4 @@ PostUp = iptables -t nat -A POSTROUTING -o YOUR_Network_Interface_Name -j MASQUE
 
 PostDown = iptables -D FORWARD -i wg0 -j ACCEPT
 
-PostDown = iptables -t nat -D POSTROUTING -o YOUR_Network_Interface_Name -j MASQUERAD
+PostDown = iptables -t nat -D POSTROUTING -o YOUR_Network_Interface_Name -j MASQUERADE
